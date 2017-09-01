@@ -1,0 +1,31 @@
+{
+  "name": "teseo",
+  "version": "0.0.1",
+  "description": "Webcomponents Library",
+  "files": ["dist"],
+  "scripts": {
+    "build": "stencil build",
+    "dev":
+      "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+    "serve": "stencil-dev-server",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@stencil/core": "next",
+    "@stencil/router": "0.0.4"
+  },
+  "devDependencies": {
+    "@stencil/dev-server": "latest",
+    "@stencil/utils": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjpenast/teseo.git"
+  },
+  "author": "Pedro José Peña",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pjpenast/teseo"
+  },
+  "homepage": "https://github.com/pjpenast/teseo"
+}
