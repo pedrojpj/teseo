@@ -1,5 +1,52 @@
-st-switch {
-   input {
-      display: none;
-   }
+ts-switch {
+  input {
+    display: none;
+  }
+
+  .custom-checkbox {
+    width: 45px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: #dedede;
+    display: inline-block;
+    padding: 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+
+    .round {
+      display: block;
+      width: 19px;
+      height: 19px;
+      background-color: white;
+      border-radius: 50%;
+      cursor: pointer;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+    }
+  }
+
+  &.switch-checked {
+    .custom-checkbox {
+      background-color: #128bde;
+
+      .round {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .label {
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 15px;
+    line-height: 1.33;
+    text-align: right;
+    color: #0f1b27;
+    position: relative;
+    top: -6px;
+  }
 }
