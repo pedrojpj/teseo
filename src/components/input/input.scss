@@ -1,0 +1,89 @@
+@import '../../../node_modules/teseo-theme/_index';
+
+ts-input {
+  label {
+    font-size: $egeo-font-size-xsmall;
+    font-weight: bold;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding-bottom: 4px;
+    transition: all 0.3s;
+    color: $action-secondary-07;
+
+    &.focus {
+      color: $action-primary-default;
+    }
+  }
+
+  .error {
+    label {
+      color: $status-critical-default;
+    }
+
+    div.input,
+    div.input:hover,
+    div.input:focus {
+      border-color: $input-field-error;
+    }
+
+    .message {
+      color: $status-critical-default;
+    }
+  }
+
+  .message {
+    padding: 0;
+    margin: 3px 0 0 0;
+    font-size: 13px;
+    text-align: left;
+  }
+
+  div.input {
+    border-radius: 4px;
+    background: $neutral-00;
+    border: 1px solid $neutral-05;
+    line-height: 40px;
+    padding: 0 15px;
+    outline: none;
+    font-size: $egeo-font-size-small;
+    transition: all 0.3s;
+    display: flex;
+
+    &:focus,
+    &:hover {
+      border-color: $input-field-onfocus;
+
+      i {
+        color: $action-primary-default;
+      }
+    }
+
+    input {
+      flex: 1;
+      border: 0;
+      background: transparent;
+      outline: none;
+      line-height: 40px;
+      -webkit-appearance: none;
+    }
+
+    input {
+      -webkit-appearance: searchfield;
+    }
+
+    *::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+      display: none;
+    }
+
+    i {
+      position: relative;
+    }
+
+    .search {
+      i {
+        cursor: pointer;
+      }
+    }
+  }
+}

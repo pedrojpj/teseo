@@ -7,11 +7,11 @@ import { Component, Prop } from '@stencil/core';
 export class Switch {
   @Prop() type: 'button' | 'submit' | 'reset' = 'button';
 
-  @Prop({ state: true })
+  @Prop({ mutable: true })
   checked: boolean = false;
-  @Prop({ state: true })
+  @Prop({ mutable: true })
   disabled: boolean = false;
-  @Prop({ state: true })
+  @Prop({ mutable: true })
   value: string;
 
   onChange() {

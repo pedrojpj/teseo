@@ -10,8 +10,27 @@
 
 <body>
 
-  <ts-button>Prueba</ts-button>
+  <ts-button class="button-primary" id="button">Prueba</ts-button>
+
+  <ts-button class="button-toolbar" icon="actions"></ts-button>
+
   <ts-switch>Prueba</ts-switch>
+
+  <ts-input placeholder="Enter your name" label="Name"></ts-input>
+
+  <ts-input type="search" id="search"></ts-input>
+
+  <ts-input placeholder="Enter your name" error label="First Name" message="Field required"></ts-input>
+
+  <ts-textarea></ts-textarea>
+
+  <script>
+    document.querySelector('ts-button').addEventListener('click', function (e) { console.log(e) })
+
+    document.querySelector('ts-input').addEventListener('change', function (e) { console.log(e) });
+
+    document.querySelector('ts-input#search').addEventListener('search', function (e) { console.log(e) })
+  </script>
 
 </body>
 
